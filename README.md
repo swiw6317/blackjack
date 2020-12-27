@@ -1,2 +1,2 @@
 # blackjack
-basic blackjack game for pyhton bootcamp period
+basic blackjack game for python bootcamp period
