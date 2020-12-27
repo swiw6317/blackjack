@@ -1,2 +1,2 @@
 # blackjack
-basic blackjack game 
+basic blackjack game for pyhton bootcamp period
