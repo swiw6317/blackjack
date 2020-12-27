@@ -3,8 +3,8 @@ import random
 game_finished=False
 who_win=""
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-
 answer = input("Do you want to play blackjack? y or n: ")
+#calculate score based on player and computer list values
 def sum_score(list_hand,player):
   global computer_hand
   global game_finished
@@ -23,7 +23,7 @@ def sum_score(list_hand,player):
        if score>21:
         score-=10
   return score
-
+#calculates score and winner
 def win_calc():
  global game_finished
  global who_win
@@ -50,7 +50,7 @@ for hand in range(2):
  your_hand+=[random.choice(cards)]
 computer_score=sum_score(computer_hand,"computer")
 your_score=sum_score(your_hand,"you")
-
+#loop for winner calculation
 while not game_finished:
   print(f"computer hand: {computer_hand} - computer score:{computer_score}")
   print(f"your hand: {your_hand} - your current score:{your_score}\n")
