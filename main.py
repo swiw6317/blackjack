@@ -29,19 +29,19 @@ def win_calc():
  global who_win
  if your_score==21 and computer_score!=21:
        game_finished=True
-       who_win="You Win1!"
+       who_win="You Win!"
  elif your_score>computer_score:
        game_finished=True
-       who_win="You Win2!"
+       who_win="You Win!"
  elif your_score==computer_score:
        game_finished=True
        who_win="Draw"
  elif your_score>21:
        game_finished=True
-       who_win="You lost1"
+       who_win="You lost"
  elif your_score<computer_score:
        game_finished=True
-       who_win="You lost2"
+       who_win="You lost"
  
 computer_hand=[]
 your_hand=[]
