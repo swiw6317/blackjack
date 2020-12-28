@@ -30,18 +30,21 @@ def win_calc():
  if your_score==21 and computer_score!=21:
        game_finished=True
        who_win="You Win!"
- elif your_score>computer_score:
+ elif your_score<=21 and your_score>computer_score:
        game_finished=True
        who_win="You Win!"
  elif your_score==computer_score:
        game_finished=True
        who_win="Draw"
+ elif your_score<computer_score and computer_score>=21:
+       game_finished=True
+       who_win="You Win!"
+ elif your_score<computer_score and computer_score<=21:
+       game_finished=True
+       who_win="You lost!"
  elif your_score>21:
        game_finished=True
-       who_win="You lost"
- elif your_score<computer_score:
-       game_finished=True
-       who_win="You lost"
+       who_win="You lost!"
  
 computer_hand=[]
 your_hand=[]
